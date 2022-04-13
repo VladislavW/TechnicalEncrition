@@ -1,1 +1,1 @@
-# TechnicalEncrition
+# EncryptionApp
