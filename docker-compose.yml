@@ -1,0 +1,17 @@
+﻿version: "3.9"
+services:
+  api:
+    build:
+      context: .
+      dockerfile: EncryptionApp.EncryptionService/Dockerfile
+    ports:
+      - "8001:80"
+    depends_on:
+      - service
+    
+  service:
+    build:
+      context: .
+      dockerfile: EncryptionApp.EncryptionService/Dockerfile
+    ports:
+      - "8002:80"
