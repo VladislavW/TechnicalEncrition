@@ -24,6 +24,7 @@ namespace EncryptionApp.ApiGateway
             services.AddHealthChecks();
             services.AddResponseCompression();
             services.AddEncryptionServiceApiClient();
+            services.ConfigureOptions(Configuration);
             
             services.AddSwaggerGen(c =>
             {

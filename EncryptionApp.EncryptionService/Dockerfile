@@ -13,8 +13,6 @@ RUN dotnet build "EncryptionApp.EncryptionService.csproj" -c Release -o /app/bui
 
 FROM build AS publish
 RUN dotnet publish "EncryptionApp.EncryptionService.csproj" -c Release -o /app/publish
-RUN dotnet dev-certs https -ep %USERPROFILE%\.aspnet\https\aspnetapp.pfx -p password
-RUN dotnet dev-certs https --trust
 
 FROM base AS final
 WORKDIR /app

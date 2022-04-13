@@ -4,6 +4,7 @@ using EncryptionApp.ApiGateway.Infrastructure.Attributes;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace EncryptionApp.ApiGateway.Infrastructure.Extensions
@@ -34,7 +35,16 @@ namespace EncryptionApp.ApiGateway.Infrastructure.Extensions
 
             return services;
         }
-        
+
+        public static IServiceCollection ConfigureOptions(
+            this IServiceCollection services,
+            IConfiguration configuration)
+        {
+            services
+                .Configure<EncryptionServiceHttpClientOptions>(configuration.GetSection("EncryptionServiceHttpClient"));
+            return services;
+        }
+
         public static IServiceCollection AddForwardedHeadersOptions(this IServiceCollection services)
         {
             services.Configure<ForwardedHeadersOptions>(options =>

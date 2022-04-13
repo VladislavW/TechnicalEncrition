@@ -11,8 +11,6 @@ RUN dotnet build "EncryptionApp.ApiGateway.csproj" -c Release -o /app/build
 
 FROM build AS publish
 RUN dotnet publish "EncryptionApp.ApiGateway.csproj" -c Release -o /app/publish
-RUN dotnet dev-certs https -ep %USERPROFILE%\.aspnet\https\aspnetapp.pfx -p password
-RUN dotnet dev-certs https --trust
 
 FROM base AS final
 WORKDIR /app
