@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptionApp.EncryptionService", "EncryptionApp.EncryptionService\EncryptionApp.EncryptionService.csproj", "{4718AEF1-4C9F-4609-9370-FF001AC54861}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptionApp.ApiGateway", "EncryptionApp.ApiGateway\EncryptionApp.ApiGateway.csproj", "{F6274FB0-AC9D-43C0-ACBD-31FCE6FAEFE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4718AEF1-4C9F-4609-9370-FF001AC54861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4718AEF1-4C9F-4609-9370-FF001AC54861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4718AEF1-4C9F-4609-9370-FF001AC54861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4718AEF1-4C9F-4609-9370-FF001AC54861}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6274FB0-AC9D-43C0-ACBD-31FCE6FAEFE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6274FB0-AC9D-43C0-ACBD-31FCE6FAEFE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6274FB0-AC9D-43C0-ACBD-31FCE6FAEFE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6274FB0-AC9D-43C0-ACBD-31FCE6FAEFE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
