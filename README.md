@@ -1,2 +1,2 @@
 # EncryptionApp
-Services provides APIs for encripts and decripts string by AesKey
+Services provides APIs for encrypt and decrypt string by Aes Key
